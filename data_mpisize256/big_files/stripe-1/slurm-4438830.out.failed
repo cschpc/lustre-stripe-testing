@@ -1,0 +1,16 @@
+nRepeat = 1, mpiSize = 256
+fileSizeMB AvgTime AvgBandwidth
+51200 41.9594 1220.23
+102400 60.4717 1693.35
+153600 81.8038 1877.66
+slurmstepd: error:  mpi/pmix_v3: _errhandler: c2210 [1]: pmixp_client_v2.c:212: Error handler invoked: status = -25, source = [slurm.pmix.4438830.0:219]
+slurmstepd: error: *** STEP 4438830.0 ON c2209 CANCELLED AT 2025-04-29T06:07:24 ***
+slurmstepd: error:  mpi/pmix_v3: _errhandler: c2210 [1]: pmixp_client_v2.c:212: Error handler invoked: status = -25, source = [slurm.pmix.4438830.0:146]
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd: error:  mpi/pmix_v3: _errhandler: c2209 [0]: pmixp_client_v2.c:212: Error handler invoked: status = -25, source = [slurm.pmix.4438830.0:11]
+slurmstepd: error: run_script_as_user: couldn't change working dir to /scratch/project_2002078/laurinie/striping_tests/rank256/bigdata/stripe-1: Input/output error
+srun: error: c2210: task 146: Killed
+srun: Terminating StepId=4438830.0
+srun: error: c2210: task 219: Bus error
+srun: error: c2209: tasks 10-11,13,20,30,40,48,64-66,70,78,81,106,114,118,126: Killed
+srun: error: Timed out waiting for job step to complete
